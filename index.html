@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-2018GDCPC-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/10/2018GDCPC-1/" class="article-date">
+  <time datetime="2018-03-10T03:54:17.000Z" itemprop="datePublished">2018-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/10/2018GDCPC-1/">2018GDCPC-1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://vjudge.net/contest/215276#overview" target="_blank" rel="noopener">比赛地址</a></p>
+<ol>
+<li>SGU 533  </li>
+</ol>
+<ul>
+<li>题意：问最少要多少个骰子可以叠成一条柱子，使所有向外面的点数加起来等于给定N。</li>
+<li>题解：骰子相对面相加一定等于7，特判小于一个骰子的点数和的情况，后面的可以算出来</li>
+</ul>
+<ol>
+<li>SGU 505  </li>
+</ol>
+<ul>
+<li>题意：N个字符串，Q个询问，每个询问问有多少个串同时满包含前缀X和后缀Y</li>
+<li>题解：给15级选的题，把N个串按原串和反串分别排序一次得到两种名次。<br>相同前缀的串在前缀名次中肯定连续，后缀也一样。<br>用前缀名次作为下标，后缀名次作相应前缀名次位置数据构建线段树，于是每个询问就转化成查询给定前缀串的区间中包含多少个后缀串区间中的数值</li>
+</ul>
+<ol>
+<li>FZU 1898  </li>
+</ol>
+<ul>
+<li>题意：给定一个字符串，要求删除若干个字符，得出不包含子串“AC“的最长且字典序最小的串  </li>
+<li>题解：把所有仅包含A和C的子串提出来分别处理，只需要把每个子串处理成前面若干个C，后面若干个A的情况，暴力枚举这个转折点位置就可以了</li>
+</ul>
+<ol>
+<li>FZU 2013</li>
+</ol>
+<ul>
+<li>题意：最大子段和加强版，要求子段长度不小于M</li>
+<li>题解：转移方程从前面第M个转移就可以了</li>
+</ul>
+<ol>
+<li>FZU 1688</li>
+</ol>
+<ul>
+<li>题意：同时控制两个人在两个隔断的格子图中移动，前后操作同向，左右操作反向，如果一个操作一方能动另一方不能移动，那能移动的一方可以移动。问两人能不能同时到达终点</li>
+<li>题解：地图只有15x10，用两个人的坐标共4维做一次BFS</li>
+</ul>
+<ol>
+<li>CF 163B</li>
+</ol>
+<ul>
+<li>题意：N个旅鼠，要选K只分别爬上K个跳台，K个跳台的高度是个等差数列，要求重的旅鼠要站的不低于轻的旅鼠，给出每个旅鼠的爬塔速度，爬塔互不干扰。  问怎么分配能让爬塔时间最短</li>
+<li>题解：二分最短时间，检验是否有合法分配方式</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/10/2018GDCPC-1/" data-id="cjekuagpn0000v1cwg7tofb9j" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2018GDCPC/">2018GDCPC</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2018GDCPC/">2018GDCPC</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/2018GDCPC/" style="font-size: 10px;">2018GDCPC</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/10/2018GDCPC-1/">2018GDCPC-1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
