@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -84,44 +84,32 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a href="https://vjudge.net/contest/215276#overview" target="_blank" rel="noopener">比赛地址</a></p>
-<ol>
-<li>SGU 533  </li>
-</ol>
+<p>A SGU 533  </p>
 <ul>
 <li>题意：问最少要多少个骰子可以叠成一条柱子，使所有向外面的点数加起来等于给定N。</li>
 <li>题解：骰子相对面相加一定等于7，特判小于一个骰子的点数和的情况，后面的可以算出来</li>
 </ul>
-<ol>
-<li>SGU 505  </li>
-</ol>
+<p>B SGU 505  </p>
 <ul>
 <li>题意：N个字符串，Q个询问，每个询问问有多少个串同时满包含前缀X和后缀Y</li>
 <li>题解：给15级选的题，把N个串按原串和反串分别排序一次得到两种名次。<br>相同前缀的串在前缀名次中肯定连续，后缀也一样。<br>用前缀名次作为下标，后缀名次作相应前缀名次位置数据构建线段树，于是每个询问就转化成查询给定前缀串的区间中包含多少个后缀串区间中的数值</li>
 </ul>
-<ol>
-<li>FZU 1898  </li>
-</ol>
+<p>C FZU 1898  </p>
 <ul>
 <li>题意：给定一个字符串，要求删除若干个字符，得出不包含子串“AC“的最长且字典序最小的串  </li>
 <li>题解：把所有仅包含A和C的子串提出来分别处理，只需要把每个子串处理成前面若干个C，后面若干个A的情况，暴力枚举这个转折点位置就可以了</li>
 </ul>
-<ol>
-<li>FZU 2013</li>
-</ol>
+<p>D FZU 2013</p>
 <ul>
 <li>题意：最大子段和加强版，要求子段长度不小于M</li>
 <li>题解：转移方程从前面第M个转移就可以了</li>
 </ul>
-<ol>
-<li>FZU 1688</li>
-</ol>
+<p>E FZU 1688</p>
 <ul>
 <li>题意：同时控制两个人在两个隔断的格子图中移动，前后操作同向，左右操作反向，如果一个操作一方能动另一方不能移动，那能移动的一方可以移动。问两人能不能同时到达终点</li>
 <li>题解：地图只有15x10，用两个人的坐标共4维做一次BFS</li>
 </ul>
-<ol>
-<li>CF 163B</li>
-</ol>
+<p>F CF 163B</p>
 <ul>
 <li>题意：N个旅鼠，要选K只分别爬上K个跳台，K个跳台的高度是个等差数列，要求重的旅鼠要站的不低于轻的旅鼠，给出每个旅鼠的爬塔速度，爬塔互不干扰。  问怎么分配能让爬塔时间最短</li>
 <li>题解：二分最短时间，检验是否有合法分配方式</li>
@@ -130,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/10/2018GDCPC-1/" data-id="cjekugzpv0000wrcwfpu8940e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/10/2018GDCPC-1/" data-id="cjekux7700000zscw92xqd7wj" class="article-share-link">Teilen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2018GDCPC/">2018GDCPC</a></li></ul>
@@ -172,7 +160,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -182,7 +170,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
