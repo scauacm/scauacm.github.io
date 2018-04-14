@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>2018SCAUCPC题解 | SCAUACM</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="2018 SCAUCPC &amp;#x9898;&amp;#x89E3; Unsolved Problem(132/137) &amp;#x7B7E;&amp;#x5230;&amp;#x9898;&amp;#xFF0C;&amp;#x6C42;&amp;#x6700;&amp;#x5C0F;&amp;#x7684;&amp;#x672A;&amp;#x51FA;&amp;#x73B0;&amp;#x8FC7;&amp;#x7684;&amp;#x6B63;&amp;#x6574;&amp;#x6570;&amp;#x3002;  Square">
+<meta name="keywords" content="SCAUCPC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2018SCAUCPC题解">
+<meta property="og:url" content="http://yoursite.com/2018/04/14/2018SCAUCPC/index.html">
+<meta property="og:site_name" content="SCAUACM">
+<meta property="og:description" content="2018 SCAUCPC &amp;#x9898;&amp;#x89E3; Unsolved Problem(132/137) &amp;#x7B7E;&amp;#x5230;&amp;#x9898;&amp;#xFF0C;&amp;#x6C42;&amp;#x6700;&amp;#x5C0F;&amp;#x7684;&amp;#x672A;&amp;#x51FA;&amp;#x73B0;&amp;#x8FC7;&amp;#x7684;&amp;#x6B63;&amp;#x6574;&amp;#x6570;&amp;#x3002;  Square">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-14T10:02:31.546Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2018SCAUCPC题解">
+<meta name="twitter:description" content="2018 SCAUCPC &amp;#x9898;&amp;#x89E3; Unsolved Problem(132/137) &amp;#x7B7E;&amp;#x5230;&amp;#x9898;&amp;#xFF0C;&amp;#x6C42;&amp;#x6700;&amp;#x5C0F;&amp;#x7684;&amp;#x672A;&amp;#x51FA;&amp;#x73B0;&amp;#x8FC7;&amp;#x7684;&amp;#x6B63;&amp;#x6574;&amp;#x6570;&amp;#x3002;  Square">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "SCAUACM",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>SCAUACM</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">SCAUACM</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        homePage
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-2018SCAUCPC" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    2018SCAUCPC题解
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h1 id="2018-SCAUCPC-&#x9898;&#x89E3;"><a href="#2018-SCAUCPC-&#x9898;&#x89E3;" class="headerlink" title="2018 SCAUCPC &#x9898;&#x89E3;"></a>2018 SCAUCPC &#x9898;&#x89E3;</h1><ol class="ui list">
+<li><p>Unsolved Problem(132/137)</p>
+<p>&#x7B7E;&#x5230;&#x9898;&#xFF0C;&#x6C42;&#x6700;&#x5C0F;&#x7684;&#x672A;&#x51FA;&#x73B0;&#x8FC7;&#x7684;&#x6B63;&#x6574;&#x6570;&#x3002;</p>
+</li>
+<li><p>Square Game(85/129)</p>
+<p>&#x7528;n&#x4E2A;&#x5C0F;&#x65B9;&#x683C;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x8FB9;&#x957F;&#x6700;&#x957F;&#x548C;&#x6700;&#x77ED;&#x7684;&#x5F62;&#x72B6;&#x3002;<br>&#x5468;&#x957F;&#x6700;&#x5927;&#x7684;&#x5F62;&#x72B6;&#xFF0C;&#x662F;n&#x4E2A;&#x6A2A;&#x7740;&#x6392;&#x4E00;&#x884C;&#xFF0C;&#x8FB9;&#x957F; <code>(2 * n) + 2</code><br>&#x5468;&#x957F;&#x6700;&#x5C0F;&#x7684;&#x5F62;&#x72B6;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x6761;&#x8FB9;&#x662F;<code>sqrt(n)</code>&#xFF0C;&#x627E;&#x5230;&#x6700;&#x5C0F;&#x7684;x&#x4F7F;&#x5F97;<code>x * sqrt(n) &gt;=n</code> &#x7B54;&#x6848;&#x662F;<code>x * sqrt(n)</code></p>
+</li>
+<li><p>Let&#x2019;s go(11/16)</p>
+<p>&#x6A21;&#x62DF;&#x56F4;&#x68CB;&#x5403;&#x68CB;&#x8FC7;&#x7A0B;&#xFF0C;&#x6BCF;&#x6B21;&#x4E0B;&#x68CB;&#x4E4B;&#x540E;&#x628A;&#x68CB;&#x5B50;&#x5468;&#x56F4;&#x5F02;&#x8272;&#x7684;&#x68CB;&#x5757;&#x641C;&#x7D22;&#x4E00;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x5757;&#x68CB;&#x6CA1;&#x6709;&#x5916;&#x63A5;&#x7684;&#x7A7A;&#x4F4D;&#x5219;&#x628A;&#x8FD9;&#x5757;&#x68CB;&#x79FB;&#x9664;&#x3002;&#x6CE8;&#x610F;&#x4E0B;&#x4E00;&#x4E2A;&#x68CB;&#x53EF;&#x4EE5;&#x5403;&#x6389;&#x6700;&#x591A;4&#x5757;&#x68CB;&#x3002;</p>
+</li>
+<li><p>Lock(0/0)</p>
+<p>&#x672C;&#x9898;&#x4E3B;&#x8981;&#x8003;&#x5BDF;&#x5229;&#x7528;fft&#x6C42;&#x6BCF;&#x4E2A;&#x5BC6;&#x7801;&#x4E32;&#x548C;&#x539F;&#x4E32;&#x5339;&#x914D;&#x7684;&#x4EE3;&#x4EF7;&#xFF0C;&#x4F46;&#x662F;&#x9501;&#x7684;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x5F97;&#x6570;&#x5B57;&#x662F;&#x5FAA;&#x73AF;&#x7684;&#xFF0C;&#x4E0D;&#x597D;&#x76F4;&#x63A5;&#x6784;&#x9020;&#x5377;&#x79EF;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x6570;&#x5B57;&#x4E00;&#x5171;&#x53EA;&#x6709;&#x56DB;&#x79CD;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x679A;&#x4E3E;&#x6BCF;&#x4E2A;&#x6570;&#x5B57;&#x6765;&#x6784;&#x9020;&#x5377;&#x79EF;&#x65B9;&#x7A0B;&#x3002;<br>&#x6C42;&#x51FA;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x4EE3;&#x4EF7;&#x4E4B;&#x540E;&#xFF0C;&#x5269;&#x4E0B;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x72B6;&#x6001;&#x538B;&#x7F29;dp&#x5373;&#x53EF;&#x3002;<br>&#x5BF9;&#x4E8E;&#x751F;&#x9508;&#x4F4D;&#x7F6E;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x5377;&#x79EF;&#x7684;&#x65F6;&#x5019;&#x628A;&#x4EE3;&#x4EF7;&#x8BBE;&#x6210;&#x65E0;&#x7A77;&#x5927;&#x3002;</p>
+</li>
+<li><p>Effective Conversation(29/67)</p>
+<p>&#x9898;&#x610F;&#xFF1A;&#x7ED9;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;m&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x6C42;&#x4E00;&#x4E2A;&#x6700;&#x957F;&#x7684;&#x8FDE;&#x7EED;&#x5B50;&#x5E8F;&#x5217;&#xFF0C;&#x91CC;&#x9762;&#x6070;&#x597D;&#x5305;&#x542B;k&#x4E2A;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x81F3;&#x5C11;&#x6709;t&#x5BF9;&#x76F8;&#x90BB;&#x4E0D;&#x76F8;&#x540C;&#x7684;&#x6570;&#x3002;<br>&#x7528;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x7EF4;&#x62A4;&#x5F53;&#x524D;&#x533A;&#x95F4;[L,R]&#xFF0C;&#x7EF4;&#x62A4;&#x5F53;&#x524D;&#x533A;&#x95F4;&#x4E0D;&#x540C;&#x4EBA;&#x6570;person&#xFF0C;&#x7EF4;&#x62A4;&#x5F53;&#x524D;&#x533A;&#x95F4;&#x76F8;&#x90BB;&#x4E0D;&#x540C;&#x6570;&#x5BF9;turns, &#x5982;&#x679C;&#x5F53;&#x524D;person&#x5927;&#x4E8E;k&#x5219;L&#x5F80;&#x524D;&#x79FB;&#xFF0C;&#x5426;&#x5219;R&#x5F80;&#x524D;&#x79FB;&#x3002;</p>
+</li>
+<li><p>Atelier Lydie &amp; Soeur ~ Hmmm.. What shall we craft next(8/11)<br><code>dp[i][j]</code>&#x8868;&#x793A;&#x7B2C;&#x4E00;&#x884C;&#x586B;&#x4E86;<code>i</code>&#x4E2A;&#x683C;&#x5B50;&#xFF0C;&#x7B2C;&#x4E8C;&#x884C;&#x586B;&#x4E86;<code>j</code>&#x4E2A;&#x683C;&#x5B50;&#xFF0C;&#x6700;&#x5927;&#x6743;&#x91CD;&#x662F;&#x591A;&#x5C11;&#xFF1B;&#x8F6C;&#x79FB;&#x679A;&#x4E3E;&#x4E0B;&#x4E00;&#x4E2A;&#x65B9;&#x5757;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x65B9;&#x5757;&#x5176;&#x4E2D;&#x4E00;&#x6761;&#x8FB9;&#x662F;2&#x5417;&#xFF0C;&#x53E6;&#x4E00;&#x6761;&#x8FB9;&#x662F;x&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8F6C;&#x79FB;&#x5230;<code>dp[i + x][j + x]</code>&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x65B9;&#x5757;&#x5176;&#x4E2D;&#x4E00;&#x6761;&#x8FB9;&#x662F;1&#xFF0C;&#x53E6;&#x4E00;&#x6761;&#x8FB9;&#x662F;x&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8F6C;&#x79FB;&#x5230;<code>dp[i][j + x]</code>&#x548C;<code>dp[i + x][j]</code>&#xFF0C;&#x7B54;&#x6848;&#x5C31;&#x662F;<code>max(dp[i][j])</code>&#xFF0C;&#x7B97;&#x6CD5;&#x590D;&#x6742;&#x5EA6;<code>O(T * n^3)</code></p>
+</li>
+<li><p>Atelier Lydie &amp; Suelle ~ Traveling in the unknown musterious world(2/2)</p>
+<p>&#x9996;&#x5148;&#x7528;&#x5BB9;&#x65A5;&#x628A;&#x95EE;&#x9898;&#x62C6;&#x89E3;&#x6210;&#x6C42;<code>[1, 1]</code>&#x5230;<code>[x, y]</code>&#x7684;<code>&apos;x&apos;</code>&#x6570;&#x91CF;&#xFF1B;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x9012;&#x5F52;&#x6C42;&#x89E3;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;<code>[x, y]</code>&#x5728;&#x5F53;&#x524D;&#x5C42;9&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x54EA;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x57FA;&#x4E8E;&#x56FE;&#x50CF;&#x7684;&#x5BF9;&#x79F0;&#x6027;&#x5176;&#x5B9E;&#x53EA;&#x6709;5&#x4E2A;&#x4F4D;&#x7F6E;&#xFF1B;&#x7136;&#x540E;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x9012;&#x5F52;&#x6C42;&#x89E3;&#x4E0B;&#x53BB;&#xFF1B;<br>&#x9700;&#x8981;&#x4F18;&#x5316;&#x7684;&#x4E24;&#x4E2A;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x662F;&#x5F53;<code>[x, y]</code>&#x76F8;&#x7B49;&#x800C;&#x4E14;&#x90FD;&#x7B49;&#x4E8E;<code>3^k</code>&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;<code>O(1)</code>&#x6C42;&#x89E3;&#x51FA;&#x7B54;&#x6848;&#xFF1B;</li>
+<li>&#x53E6;&#x4E00;&#x4E2A;&#x70B9;&#x662F;&#x5F53;<code>[x, y]</code>&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7B49;&#x4E8E;<code>3^k</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;<code>O(logn)</code>&#x6C42;&#x89E3;&#x51FA;&#x7B54;&#x6848;&#xFF1B;&#x603B;&#x4F53;&#x590D;&#x6742;&#x5EA6;&#x662F;<code>T(n) = 2 O(logn) + T(n / 3) = O(logn*logn)</code></li>
+</ol>
+</li>
+<li><p>Treasure(17/53)</p>
+<p>&#x4E8C;&#x5206;&#x6700;&#x4F4E;&#x7B49;&#x7EA7;&#xFF0C;&#x7136;&#x540E;BFS&#x3002;</p>
+</li>
+<li><p>Alice and Bob are drawing lines(7/16)<br>&#x6A21;&#x62DF;&#x9898;&#xFF0C;&#x76F4;&#x63A5;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#x3002;<br>&#x8F93;&#x5165;&#x6570;&#x636E;&#x5F88;&#x5927;&#xFF0C;&#x4F46;&#x662F;&#x5C4F;&#x5E55;&#x5927;&#x5C0F;&#x53EA;&#x6709;21*21&#x3002;</p>
+</li>
+</ol>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2018-04-14T09:30:59.000Z" itemprop="datePublished">2018-04-14</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/SCAUCPC/">SCAUCPC</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a class="ui tiny button disabled"><i class="angle left icon"></i>prePage</a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2018/04/01/2018GDCPC-4/" class="ui tiny button">
+                    
+                    2018GDCPC-4
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#2018-SCAUCPC-题解"><span>2018 SCAUCPC 题解</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2018 <a href="/">SCAUACM</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
