@@ -3,9 +3,6 @@ title: 2018SCAUCPC题解
 date: 2018-04-14 17:30:59
 tags: SCAUCPC
 ---
-
-# 2018 SCAUCPC 题解
-
 1. Unsolved Problem(132/137)
 
   签到题，求最小的未出现过的正整数。
@@ -14,7 +11,7 @@ tags: SCAUCPC
 
   用n个小方格组成一个边长最长和最短的形状。  
   周长最大的形状，是n个横着排一行，边长 `(2 * n) + 2`  
-  周长最小的形状，其中一条边是`sqrt(n)`，找到最小的x使得`x * sqrt(n) >=n` 答案是`x * sqrt(n)`
+  周长最小的形状，其中一条边是`sqrt(n)`，找到最小的x使得`x * sqrt(n) >=n` 答案是`2 * (x + sqrt(n))`
 
 3. Let's go(11/16)
 
