@@ -4,8 +4,6 @@ date: 2018-04-14 17:30:59
 tags: SCAUCPC
 ---
 
-# 2018 SCAUCPC 题解
-
 1. Unsolved Problem(132/137)
 
   签到题，求最小的未出现过的正整数。
